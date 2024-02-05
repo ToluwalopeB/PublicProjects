@@ -1,3 +1,9 @@
+'''
+An ETL script to extract a table from a web page, perform transformations and load the table into a database.
+The script also includes a function that can used to query the data loaded into the database. As well as a log function 
+that tracks each stage of the ETL process
+'''
+
 import pandas as pd 
 from bs4 import BeautifulSoup
 from datetime import datetime as dt
