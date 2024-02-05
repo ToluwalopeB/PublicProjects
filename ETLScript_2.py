@@ -1,3 +1,10 @@
+
+'''
+An ETL script to extract a table from a web page, perform transformations and load the table into a database.
+The script also includes a function that can used to query the data loaded into the database. As well as a log function 
+that tracks each stage of the ETL process
+'''
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd 
@@ -91,7 +98,6 @@ def run_query(query_statement, sql_connection):
     prints the output on the terminal. Function returns nothing. '''
 
     final_df = pd.read_sql(query_statement,sql_connection)
-    print(final_df.head())
 
 
 def log_progress(message):
