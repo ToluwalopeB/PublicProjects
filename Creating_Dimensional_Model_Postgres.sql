@@ -1,3 +1,5 @@
+/* SQL script to create a dimensional data model from an existing relational model on a local postgres database*/
+
 
 /* Create dimension tables*/
 
