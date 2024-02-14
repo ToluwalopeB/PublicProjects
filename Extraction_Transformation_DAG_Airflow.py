@@ -1,3 +1,8 @@
+'''
+DAG to extract and perform transformations on a series of flat files
+
+'''
+
 from datetime import timedelta
 from airflow import DAG
 from airflow.utils.dates import days_ago
@@ -17,7 +22,7 @@ default_args = {
 dag = DAG(
     dag_id='ETL_toll_data',
     default_args=default_args,
-    description='Simple ETL DAG',
+    description='Simple DAG',
     schedule_interval=timedelta(days=1),
 )
 
